@@ -31,7 +31,7 @@ func _draw() -> void:
 		var x: float = fmod(float(i) * 17.3 + _anim_timer * (5.0 + float(i) * 0.4), 320.0)
 		var y: float = float(i) * 9.7
 		y = fmod(y, 180.0)
-		var bright: float = absf(sinf(_anim_timer * 1.2 + float(i))) * 0.6 + 0.3
+		var bright: float = absf(sin(_anim_timer * 1.2 + float(i))) * 0.6 + 0.3
 		draw_rect(Rect2(x, y, 1, 1), Color(bright, bright, bright + 0.1))
 
 func _update_high_score() -> void:
