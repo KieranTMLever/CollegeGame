@@ -1,0 +1,104 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/MainMenu.gd" id="1"]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.05, 0.05, 0.12, 1)
+mouse_filter = 2
+
+[node name="TitleLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -90.0
+offset_right = 90.0
+offset_top = 18.0
+offset_bottom = 40.0
+text = "🎓 CAMPUS QUEST 🎓"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(1, 0.9, 0.2, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.1, 0.1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+
+[node name="SubtitleLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -90.0
+offset_right = 90.0
+offset_top = 40.0
+offset_bottom = 52.0
+text = "Survive Finals Week!"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(0.7, 0.85, 1, 1)
+
+[node name="VBox" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -55.0
+offset_right = 55.0
+offset_top = -20.0
+offset_bottom = 60.0
+alignment = 1
+theme_override_constants/separation = 5
+
+[node name="StartBtn" type="Button" parent="VBox"]
+layout_mode = 2
+text = "▶  START GAME"
+theme_override_font_sizes/font_size = 9
+theme_override_colors/font_color = Color(0.2, 1, 0.4, 1)
+
+[node name="DiffBtn" type="Button" parent="VBox"]
+layout_mode = 2
+text = "DIFFICULTY: NORMAL"
+theme_override_font_sizes/font_size = 9
+
+[node name="ControlsBtn" type="Button" parent="VBox"]
+layout_mode = 2
+text = "⌨  CONTROLS"
+theme_override_font_sizes/font_size = 9
+
+[node name="AudioBtn" type="Button" parent="VBox"]
+layout_mode = 2
+text = "🔊 AUDIO"
+theme_override_font_sizes/font_size = 9
+
+[node name="QuitBtn" type="Button" parent="VBox"]
+layout_mode = 2
+text = "✕  QUIT GAME"
+theme_override_font_sizes/font_size = 9
+theme_override_colors/font_color = Color(1, 0.4, 0.4, 1)
+
+[node name="HighScoreLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -60.0
+offset_right = 60.0
+offset_top = -16.0
+offset_bottom = -4.0
+text = "BEST: 0"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 8
+theme_override_colors/font_color = Color(0.8, 0.8, 0.5, 1)
+
+[node name="StoryLabel" type="Label" parent="."]
+offset_left = 4.0
+offset_right = 180.0
+offset_top = 142.0
+offset_bottom = 175.0
+text = "You are Alex, a sleep-deprived student.\nCollect ALL notes to unlock the exit!\nAvoid zombie students & electric hazards."
+theme_override_font_sizes/font_size = 6
+theme_override_colors/font_color = Color(0.6, 0.7, 0.8, 0.9)
+autowrap_mode = 3
